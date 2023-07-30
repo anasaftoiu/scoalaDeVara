@@ -1,0 +1,140 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ font-family: sans-serif;
+}
+#poza{
+  background-image: url("/assets/poze/log.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*Formular(begin)*/
+main{
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+.continut_tot{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+.continut_spate{
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgb(0, 128, 255, o.5);
+}
+.continut_spate div{
+  margin: 100px 40px;
+  color: white;
+  transition: all 500ms;  
+}
+.continut_spate div p,
+.continut_spate div button {
+  margin-top: 30px;
+}
+.continut_spate div h3{
+  font-weight: 400;
+  font-size: 26px;
+}
+.continut_spate button{
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 300ms;
+}
+.continut_spate button:hover{
+  background: #fff;
+  color:#46A2FD ;
+}
+/*Logare si inregistrare(begin)*/
+.continut_log_registru{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+  transition: left 500ms cubic-bezier(0.175 , 0.885 , 0.320 , 1.275);
+}
+.continut_log_registru form{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: rgb(232, 206, 206);
+  position: absolute;
+  border-radius: 20px;
+}
+.continut_log_registru form h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #46A2FD;
+}
+.continut_log_registru form input{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #F2F2F2;
+  font-size: 16px;
+  outline: none;
+}
+.continut_log_registru form button{
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #46A2FD;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.formular_log{
+  opacity: 1;
+  display: block;
+}
+.formular_registru{
+  display: none;
+}
+/*Locare si inregistrare(end)*/
+/*Responsabil Design (begin)*/
+@media screen and (max-width:850px) {
+  main{
+    margin-top: 50px;
+  }
+  .continut_spate{
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+  .continut_spate div{
+    margin: 0px;
+    position: absolute;
+  }
+  .continut_log_registru{
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+  .continut_log_registru form {
+    position: relative;
+  }
+}
+/*Responsabil Design (end)*/
+/*Formular(end)*/
